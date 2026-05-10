@@ -54,6 +54,8 @@ public class TodoService {
         Todo saved = todoRepository.save(todo);
         log.info("operation=todo.created todoId={}", saved.getId());
         return toResponse(saved);
+
+
     }
 
     @Transactional
