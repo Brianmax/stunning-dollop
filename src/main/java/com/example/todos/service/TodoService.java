@@ -47,6 +47,7 @@ public class TodoService {
         if (request == null) {
             throw new IllegalArgumentException("Request body must not be null");
         }
+
         log.info("operation=todo.create title={}", request.title());
         Todo todo = new Todo();
         todo.setTitle(request.title());
